@@ -25,7 +25,7 @@ engine = create_engine('mysql+mysqldb://root@localhost:3306/sql_test')
 DBSession = sessionmaker(bind=engine)
 
 def query_action(sort_by):
-    lists = DBSession().query(User).group_by(sort_by)
+    lists = DBSession().query(User).order_by(sort_by)
     print('raw_sql：'+str(lists))
     return lists.all()
 
