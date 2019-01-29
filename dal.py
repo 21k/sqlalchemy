@@ -31,7 +31,6 @@ def query_action(sort_by):
 
 if __name__ == "__main__":
     print(sys.argv)
-    print('xxx',hasattr(User,'xxx'))
     result = query_action(sys.argv[1])
     for x in result:
         print x.id,x.create_time
