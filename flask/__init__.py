@@ -1,3 +1,6 @@
+#export FLASK_ENV='development'
+#flask run
+
 import os
 import json
 from flask import Flask,request
